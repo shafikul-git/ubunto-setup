@@ -50,4 +50,10 @@ Then
 ```sh
 ALTER USER 'phpmyadmin'@'localhost' IDENTIFIED BY '---';
 ```
+Then 
+```sh
+FLUSH PRIVILEGES;
+EXIT;
+```
+
 Login `http://localhost/phpmyadmin/` UserName `phpmyadmin` Password `---`
