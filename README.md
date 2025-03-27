@@ -54,6 +54,11 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 ```
 
 ---
+### If you not Set Password, then Username & password
+```sh
+sudo cat /etc/mysql/debian.cnf
+```
+
 ### If Change Password Phpmyadmin
 ```sh
  sudo mysql -u root -p
