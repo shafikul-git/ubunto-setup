@@ -1,4 +1,4 @@
-## First Ubuntu setup and cofiger
+## First Ubuntu setup and configure
 
 ## Install Apt `serviceName`
 ```sh
@@ -22,7 +22,7 @@ sudo apt install php
 sudo apt install composer
 ```
 ---
-## Configer Server 
+## Configure Server 
 
 ### Install Apache 
 ```sh
@@ -38,10 +38,11 @@ sudo apt install mysql-server
 sudo apt install phpmyadmin
 ```
 
-### Configer Phpmyadmin
+### Configure Phpmyadmin
 ```sh
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 ```
+---
 ### If Change Password Phpmyadmin
 ```sh
  sudo mysql -u root -p
@@ -49,9 +50,6 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 Then
 ```sh
 ALTER USER 'phpmyadmin'@'localhost' IDENTIFIED BY '---';
-```
-Then 
-```sh
 FLUSH PRIVILEGES;
 EXIT;
 ```
