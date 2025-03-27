@@ -42,3 +42,12 @@ sudo apt install phpmyadmin
 ```sh
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 ```
+### If Change Password Phpmyadmin
+```sh
+ sudo mysql -u root -p
+```
+Then
+```sh
+ALTER USER 'phpmyadmin'@'localhost' IDENTIFIED BY '---';
+```
+Login `http://localhost/phpmyadmin/` UserName `phpmyadmin` Password `---`
