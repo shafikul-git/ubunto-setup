@@ -9,9 +9,14 @@ sudo apt install
 sudo systemctl status 
 ```
 
+---
 ### Install Node
 ```sh
 sudo apt install nodejs
+```
+### Install Npm
+```sh
+sudo apt install npm -y
 ```
 ### Install php
 ```sh
@@ -21,6 +26,11 @@ sudo apt install php
 ```sh
 sudo apt install composer
 ```
+## Laravel Install But laravel Command not found
+```sh
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+```
+
 ---
 ## Configure Server 
 
@@ -42,6 +52,7 @@ sudo apt install phpmyadmin
 ```sh
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 ```
+
 ---
 ### If Change Password Phpmyadmin
 ```sh
@@ -53,5 +64,10 @@ ALTER USER 'phpmyadmin'@'localhost' IDENTIFIED BY '---';
 FLUSH PRIVILEGES;
 EXIT;
 ```
+Next
+```sh
+sudo mysql_secure_installation
+```
 
 Login `http://localhost/phpmyadmin/` UserName `phpmyadmin` Password `---`
+ 
